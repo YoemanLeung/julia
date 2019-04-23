@@ -117,13 +117,14 @@ export
     Cwstring,
 
 # Exceptions
-    DimensionMismatch,
     CapturedException,
     CompositeException,
+    DimensionMismatch,
     EOFError,
     InvalidStateException,
     KeyError,
     MissingException,
+    ProcessFailedException,
     SystemError,
     StringIndexError,
 
@@ -365,7 +366,10 @@ export
     cumsum!,
     accumulate,
     accumulate!,
+    eachcol,
     eachindex,
+    eachrow,
+    eachslice,
     extrema,
     fill!,
     fill,
@@ -638,6 +642,7 @@ export
 
 # tasks and conditions
     Condition,
+    Event,
     current_task,
     islocked,
     istaskdone,
@@ -669,6 +674,7 @@ export
     missing,
     skipmissing,
     something,
+    isnothing,
 
 # time
     sleep,
@@ -694,7 +700,10 @@ export
     fieldname,
     fieldnames,
     fieldcount,
+    fieldtypes,
+    hasfield,
     propertynames,
+    hasproperty,
     isabstracttype,
     isbitstype,
     isprimitivetype,
@@ -832,6 +841,7 @@ export
     splitdir,
     splitdrive,
     splitext,
+    splitpath,
 
 # filesystem operations
     cd,
